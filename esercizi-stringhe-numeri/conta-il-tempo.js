@@ -13,4 +13,17 @@
   http://www.imparareaprogrammare.it
 */
 
-var cats =9;
+var secondi = 12560;
+var ore;
+var minuti;
+var secondiR
+
+
+ore = secondi/3600;
+minuti = ((secondi%3600)/60);
+secondiR=secondi%60;
+
+
+
+console.log(Math.floor(ore)+ " Ore, " + Math.floor(minuti) + " Minuti, " + secondiR + " Secondi.");
+
