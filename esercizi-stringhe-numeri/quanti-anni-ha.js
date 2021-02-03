@@ -11,3 +11,28 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var year = new Date().getFullYear();
+var userYear;
+var yearPerson = 0;
+var anniMancanti =0;
+
+
+do{
+  userYear = window.prompt("Inserisci la tua data di nascita");
+  
+}while(isNaN(userYear));
+
+yearPerson = year - userYear;
+anniMancanti = 100 - yearPerson;
+
+console.log("La tua età è: " + yearPerson);
+console.log("Ti mancano " + anniMancanti + " anni per arrivare a 100");
+
+
+
+
+  
+
+
