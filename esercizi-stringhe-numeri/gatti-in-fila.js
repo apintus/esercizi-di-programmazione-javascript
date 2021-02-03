@@ -17,3 +17,25 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var nGatti;
+var nGattixFila;
+var nFile;
+var controllo;
+var nGattiMancanti;
+
+nGatti = window.prompt("Inserisci il numero di gatti");
+nGattixFila = window.prompt("Inserisci il numero di gatti per ogni fila");
+
+controllo = nGatti/nGattixFila;
+
+if(controllo % 1 !=0)
+{
+  nFile = Math.ceil(controllo);
+  nGattiMancanti = (nFile*nGattixFila)-nGatti;
+}
+
+console.log("Numero di file: " + nFile);
+console.log("Gatti mancanti: " + nGattiMancanti);
+
