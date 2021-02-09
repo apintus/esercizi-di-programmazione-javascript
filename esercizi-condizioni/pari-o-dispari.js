@@ -17,6 +17,7 @@
 */
 
 
+
 var number1;
 
 number1 = window.prompt("Inserisci il numero");
