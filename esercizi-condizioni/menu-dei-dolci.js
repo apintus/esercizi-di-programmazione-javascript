@@ -25,6 +25,7 @@
 var menu;
 var scelta=0;
 
+
 menu = window.prompt("MENU \n 1. Tiramisù \n 2. Torta della nonna \n 3. Cheesecake alla nutella \n 4. Macedonia");
 
 
