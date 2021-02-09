@@ -11,3 +11,16 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var numero;
+
+numero = window.prompt("Inserisci un numero");
+
+if(numero <= 9999){
+   console.log(numero.length + " cifre");
+}
+else{
+  console.log("Il numero inserito è troppo grande");
+}
+

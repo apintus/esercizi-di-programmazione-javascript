@@ -15,3 +15,16 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var number1;
+
+number1 = window.prompt("Inserisci il numero");
+
+
+if(number1 %2 === 0){
+  console.log("pari");
+}
+else{
+  console.log("dispari");
+}

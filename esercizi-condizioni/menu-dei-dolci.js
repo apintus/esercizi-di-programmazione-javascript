@@ -21,3 +21,33 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var menu;
+var scelta=0;
+
+menu = window.prompt("MENU \n 1. Tiramisù \n 2. Torta della nonna \n 3. Cheesecake alla nutella \n 4. Macedonia");
+
+
+switch (menu){
+  case "1":
+    console.log("Hai scelto il tiramisù");
+    break;
+
+   case "2":
+    console.log("Hai scelto la torta della nonna");
+    break;
+
+   case "3":
+    console.log("Hai scelto la cheescake alla nutella");
+    break;
+
+   case "4":
+    console.log("Hai scelto la macedonia");
+    break;
+
+    default:
+      console.log("Dolce non disponibile");
+}
+;
+
+ 
