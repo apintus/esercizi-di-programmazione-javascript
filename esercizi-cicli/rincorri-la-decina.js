@@ -19,3 +19,15 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var i;
+var linea='';
+
+for(i=1;i<101;i++) {
+  linea += i + ' ';
+  if(i % 10 == 0){
+    linea += '\n';
+  }
+}
+console.log(linea);

@@ -8,3 +8,12 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var n=5;
+var x='';
+
+for(var i=0;i<=10;i++) {
+  x += (n*i) +' ';
+}
+console.log(x);
