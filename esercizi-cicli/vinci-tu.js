@@ -34,3 +34,4 @@ else{
   console.log("il giocatore 2 vinto totalizzando " + somma2 + " punti");
 }
 
+
