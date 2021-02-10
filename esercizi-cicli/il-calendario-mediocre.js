@@ -45,3 +45,42 @@
 
   http://www.imparareaprogrammare.it
 */
+
+// Variante 1
+/*
+var gmese;
+var gsettimana= Array("Lun","Mart","Merc","Gio","Ven","Sab","Dom");
+var i,j;
+var name;
+var contagiorni='';
+
+gmese = prompt("Inserisci il numero dei giorni del mese");
+j = prompt("Da quale giorno vuoi partire?");
+var giornoinizio = j-1;
+
+
+for(i=1;i<=gmese;i++) {
+  j=(j%7);
+  contagiorni += gsettimana[j] + ' ' +i + "\n";
+  j++;
+}
+console.log(contagiorni);
+*/
+
+//Variante 2
+
+var mese = Array("Gen","Feb","Marz","Apri","Mag","Giu","Lug","Ago","Sett","Otto","Nov","Dic");
+var totGiorni= Array("31","28","31","30",'31','30','31','31','30','31','30','31');
+var gsettimana= Array("Lun","Mart","Merc","Gio","Ven","Sab","Dom");
+
+var numeroMese = prompt("In che mese siamo?");
+var contaMese = mese.indexOf(numeroMese);
+var contaGiorno = totGiorni[contaMese];
+
+console.log(contaMese,contaGiorno);
+
+
+
+
+
+
