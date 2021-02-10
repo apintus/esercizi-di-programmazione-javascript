@@ -79,3 +79,4 @@ else if(g<minore){
 console.log("maggiore " + maggiore);
 console.log("minore " + minore);
 
+
