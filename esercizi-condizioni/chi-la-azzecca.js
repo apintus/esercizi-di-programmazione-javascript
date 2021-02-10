@@ -19,3 +19,35 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var giocatore1;
+var giocatore2;
+var random;
+var diff1;
+
+giocatore1 = window.prompt("Inserisci il numero per il giocatore 1");
+giocatore2 = window.prompt("Inserisci il numero per il giocatore 2");
+
+random=Math.floor(Math.random()*100)+1;
+
+if(giocatore1==random) 
+{ 
+  console.log("Il giocatore 1 ha indovinato il numero");
+}
+else if(giocatore2==random){
+  console.log("Il giocatore 2 ha indovinato il numero");
+}
+else{
+  diff1 = giocatore1 - random;
+  diff2 = giocatore2 - random;
+}
+
+if(diff1 > diff2){
+  console.log("Nessuno dei due ha azzeccato il numero casuale, ma il giocatore 1 si è avvicinato di più!")
+}
+else{
+  console.log("Nessuno dei due ha azzeccato il numero casuale, ma il giocatore 2 si è avvicinato di più!")
+}
+console.log(random);
+
+

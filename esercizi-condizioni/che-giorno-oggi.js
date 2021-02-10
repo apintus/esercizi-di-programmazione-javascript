@@ -22,3 +22,42 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var scelta;
+
+scelta =window.prompt("Seleziona un numero da 1 a 7 e ti dirò il giorno della settiama corrispondente");
+
+switch(scelta) {
+  case '1':
+    console.log('Lunedì');
+    break;
+
+    case '2':
+    console.log('Martedì');
+    break;
+
+    case '3':
+    console.log('Mercoledì');
+    break;
+
+    case '4':
+    console.log('Giovedì');
+    break;
+
+    case '5':
+    console.log('Venerdì');
+    break;
+
+    case '6':
+    console.log('Sabato');
+    break;
+
+    case '7':
+    console.log('Domenica');
+    break;
+
+    default:
+      console.log('Nessun giorno valido');
+      
+}
