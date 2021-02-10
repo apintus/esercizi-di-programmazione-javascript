@@ -15,4 +15,24 @@
   http://www.imparareaprogrammare.it
 */
 
+var n=15; //numero lanci
+var i=0;
+var somma1;
+var somma2;
+
+somma1 += Math.floor(Math.random()*6)+1;
+console.log(somma1,somma2);
+for(i;i<=n;i++) {
+  
+  somma2 += Math.floor(Math.random()*6)+1;
+  
+}
+
+if(somma1 > somma2){
+  console.log("il giocatore 1 vinto totalizzando " + somma1 + " punti");
+}
+else{
+  console.log("il giocatore 2 vinto totalizzando " + somma2 + " punti");
+}
+
 
