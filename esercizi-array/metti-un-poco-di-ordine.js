@@ -15,3 +15,43 @@
 
   http://www.imparareaprogrammare.it
 */
+
+/*
+var array = new Array();
+
+array = Array.from({length: 10}, () => Math.floor(Math.random() * 10)+1);
+console.log(array);
+
+array.sort(function(a,b){
+  return a-b;
+});
+
+console.log(array);
+*/
+
+
+//Variante 2
+
+var array = new Array();
+var arrayOutput = new Array();
+var i,j;
+var temp;
+
+array = Array.from({length: 10}, () => Math.floor(Math.random() * 50)+1);
+console.log(array);
+
+while(!done) {
+  var done =true;
+  for (i=1;i<=array.length;i+=1) {
+    if(array[i-1]> array[i]){
+      done = false;
+      temp = array[i-1];
+      array[i-1] = array[i];
+      array[i] = temp;
+    }
+  }
+
+}
+
+
+console.log(array);

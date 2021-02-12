@@ -38,27 +38,33 @@ console.log(arrayA);
 console.log(arrayB);
 
 operazione = prompt("Scegli tra queste operazione da effettuare: \n 1. Addizione \n 2. Sottrazione \n 3. Moltiplicazione \n 4. Divisione");
-/*
+
 for(i=0;i<10;i++){
 
   switch(operazione){
     case '1':
-      for(j=0;j<10;j++){
-        arrayC[j] = arrayA[i+1] + arrayB[i];
-      }
-      break;
-        
-  }
-
-}*/
-
-switch(operazione){
-  case '1':
-    for(i=0;i<10;i++){
       arrayC[j] = arrayA[i] + arrayB[i];
       j++;
+      break;
 
-    }
+    case '2':
+      arrayC[j] = arrayA[i] - arrayB[i];
+      j++;
+      break;2
+
+    case '3':
+      arrayC[j] = arrayA[i] * arrayB[i];
+      j++;
+      break;
+
+    case '4':
+      arrayC[j] = arrayA[i] / arrayB[i];
+      j++;
+      break;
+
+      default:
+        console.log("Opzione non valida");
+  }
 
 }
 
