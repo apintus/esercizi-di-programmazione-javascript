@@ -19,3 +19,56 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var arrayPrincipale = new Array();
+var arraySecondario = new Array();
+var i,j;
+var count=0;
+
+arrayPrincipale = Array.from({length: 10}, () => Math.floor(Math.random() * 90)+1);
+arraySecondario = [1,2,3,4,5,6,7,8,9,10];
+j=0;
+
+console.log(arrayPrincipale);
+for(i=0;i<10;i++){
+  
+  for(j=0;j<10;j++){
+
+    if(arrayPrincipale[i] === arraySecondario[j]){
+      count +=1;
+    }
+  }
+  
+}
+console.log(count);
+
+switch(count){
+
+  case 2:
+  console.log("Hai fatto AMBO");
+  break;
+
+  case 3:
+  console.log("Hai fatto TERNA");
+  break;
+
+  case 4:
+  console.log("Hai fatto QUATERNA");
+  break;
+
+  case 5:
+  console.log("Hai fatto CINQUINA");
+  break;
+
+  case 10:
+  console.log("Hai fatto TOMBOLA");
+  break;
+
+  default:
+    console.log("Mi dispiace, hai perso!");
+
+  
+}
+
+
+
