@@ -15,3 +15,44 @@
 
   http://www.imparareaprogrammare.it
 */
+
+// VARIANTE 1
+/*
+var N;
+var array;
+var arrayInvertito='';
+
+N = prompt("Quando deve essere lungo l'array?");
+
+array=Array.from({length: N}, () => Math.floor(Math.random() * 100));
+console.log(array)
+
+arrayInvertito = array.reverse();
+console.log(arrayInvertito);
+*/
+
+//VARIANTE 2
+
+var N;
+var a = Array();
+var arrayInvertito=Array();
+var i,j;
+
+j= N-1;
+N = prompt("Quando deve essere lungo l'array?");
+
+for(i=0;i<N;i++) {
+  a[i] = Math.floor(Math.random() * 100);
+}
+
+i--;
+for(j=0;j<N;j++) {
+  arrayInvertito[j] = a[i];
+  i--;
+}
+
+console.log(a);
+console.log(arrayInvertito);
+
+
+
