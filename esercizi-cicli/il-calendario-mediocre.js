@@ -69,18 +69,28 @@ console.log(contagiorni);
 
 //Variante 2
 
-var mese = Array("Gen","Feb","Marz","Apri","Mag","Giu","Lug","Ago","Sett","Otto","Nov","Dic");
+var mese = Array("Gen","Feb","Mar","Apr","Mag","Giu","Lug","Ago","Set","Ott","Nov","Dic");
 var totGiorni= Array("31","28","31","30",'31','30','31','31','30','31','30','31');
 var gsettimana= Array("Lun","Mart","Merc","Gio","Ven","Sab","Dom");
 
 var numeroMese = prompt("In che mese siamo?");
-var contaMese = mese.indexOf(numeroMese);
-var contaGiorno = totGiorni[contaMese];
+var j = prompt("Da quale giorno vuoi partire?");
+var trunkString = numeroMese.substring(0,3); //salvo solo le prime 3 cifre
+var upperCaseString = trunkString.charAt(0).toUpperCase() + trunkString.slice(1); //trasformo la prima cifra in UpperCase
+var contaMese = mese.indexOf(upperCaseString); //Indicizzo la risposta
+var contaGiorno = totGiorni[contaMese]; //trovo l'indice nel secondo array
+var i;
+var contaGiorni = '';
 
-console.log(contaMese,contaGiorno);
 
+var giornoinizio = j-1;
+for(i=1;i<=contaGiorno;i++) {
+  j=(j%7);
+  contaGiorni += gsettimana[j] + ' ' +i + "\n";
+  j++;
+  
+}
 
-
-
+console.log(contaGiorni);
 
 
